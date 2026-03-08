@@ -85,7 +85,7 @@ local function setup(configs)
       ColorColumn = { bg = colors.menu },
 
       StatusLine = { fg = colors.white, bg = colors.selection },
-      StatusLineNC = { fg = colors.comment },
+      StatusLineNC = { fg = colors.bright_magenta },
       StatusLineTerm = { fg = colors.white, bg = colors.black },
       StatusLineTermNC = { fg = colors.comment },
 
@@ -103,7 +103,7 @@ local function setup(configs)
       Search = { fg = colors.black, bg = colors.orange },
       IncSearch = { fg = colors.black, bg = colors.bright_green },
       LineNr = { fg = colors.comment },
-      MatchParen = { fg = colors.black, bg = colors.red, bold = true },
+      MatchParen = { fg = colors.bright_red, bold = true, italic = true },
       NonText = { fg = colors.nontext },
       Pmenu = { fg = colors.white, bg = colors.menu },
       PmenuSel = { fg = colors.white, bg = colors.selection },
@@ -617,10 +617,10 @@ local function setup(configs)
       NotifyWarnBorder = { fg = "#785637" },
 
       -- SnacksDashboard
-      SnacksDashboardHeader = { fg = colors.purple },
-      SnacksDashboardKey = { fg = colors.orange },
-      SnacksDashboardDesc = { fg = colors.cyan },
-      SnacksDashboardIcon = { fg = colors.cyan },
+      SnacksDashboardHeader = { fg = colors.green },
+      SnacksDashboardKey = { fg = colors.bright_magenta, bold = true },
+      SnacksDashboardDesc = { fg = colors.pink },
+      SnacksDashboardIcon = { fg = colors.bright_green },
       SnacksDashboardFooter = { fg = colors.purple, italic = true },
 
       -- SnacksPicker

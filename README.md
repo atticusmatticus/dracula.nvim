@@ -1,9 +1,8 @@
-<h1 align="center" >🧛‍♂️ dracula.nvim</h1>
+<h1 align="center" >🦇 dracula.nvim</h1>
 
 <p align="center"><a href="https://draculatheme.com/">Dracula</a> colorscheme for <a href="https://neovim.io/">NEOVIM</a> written in Lua</p>
 
 ![dracula.nvim](./assets/showcase.png)
-
 
 ## ✔️ Requirements
 
@@ -78,6 +77,7 @@ require('lualine').setup {
 ```
 
 If you are using [LazyVim](https://github.com/LazyVim/LazyVim), you can add this to your plugins/colorscheme.lua file:
+
 ```lua
 return {
   -- add dracula
