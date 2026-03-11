@@ -114,7 +114,7 @@ local function setup(configs)
       QuickFixLine = { fg = colors.black, bg = colors.yellow },
       SpecialKey = { fg = colors.nontext },
 
-      SpellBad = { fg = colors.dim_white, underline = true },
+      SpellBad = { underline = true },
       SpellCap = { fg = colors.yellow },
       SpellLocal = { fg = colors.yellow },
       SpellRare = { fg = colors.yellow },
