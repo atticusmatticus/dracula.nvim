@@ -103,7 +103,7 @@ local function setup(configs)
       Search = { fg = colors.black, bg = colors.orange },
       IncSearch = { fg = colors.black, bg = colors.bright_green },
       LineNr = { fg = colors.comment },
-      MatchParen = { fg = colors.bright_red, bold = true, italic = true },
+      MatchParen = { fg = colors.bright_red, bg = colors.dim_blue, bold = true, italic = true },
       NonText = { fg = colors.nontext },
       Pmenu = { fg = colors.white, bg = colors.menu },
       PmenuSel = { fg = colors.white, bg = colors.selection },
@@ -375,7 +375,7 @@ local function setup(configs)
       LspDiagnosticsUnderlineInformation = { fg = colors.cyan, undercurl = true },
       LspDiagnosticsUnderlineHint = { fg = colors.cyan, undercurl = true },
       LspReferenceText = { fg = colors.fg },
-      LspReferenceRead = { fg = colors.white, bg = colors.nontext },
+      LspReferenceRead = { bg = colors.menu, underline = true },
       LspReferenceWrite = { fg = colors.white, bg = colors.nontext },
       LspCodeLens = { fg = colors.cyan },
       LspInlayHint = { fg = "#969696", bg = "#2f3146" },
@@ -652,6 +652,17 @@ local function setup(configs)
       NeogitDiffAddCursor = { fg = colors.green, bg = colors.selection },
       NeogitDiffDeleteCursor = { fg = colors.red, bg = colors.selection },
       NeogitDiffContextCursor = { fg = colors.comment, bg = colors.selection },
+
+      -- Agentic.nvim
+      AgenticDiffDelete = { link = "DiffDelete" },
+      AgenticDiffAdd = { link = "DiffAdd" },
+      AgenticDiffDeleteWord = { fg = colors.bg, bg = colors.dim_red, bold = true },
+      AgenticDiffAddWord = { fg = colors.bg, bg = colors.dim_green, bold = true },
+      AgenticDiffStatusPending = { fg = colors.bg, bg = colors.dim_blue },
+      AgenticDiffStatusCompleted = { fg = colors.bg, bg = colors.dim_cyan },
+      AgenticStatusFailed = { fg = colors.bg, bg = colors.dim_red },
+      AgenticCodeBlockFence = { link = "Directory" },
+      AgenticTitle = { fg = colors.bg, bg = colors.purple, bold = true },
    }
 end
 
